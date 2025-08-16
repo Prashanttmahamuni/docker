@@ -1,0 +1,27 @@
+version: '3.9'
+
+services:
+  db:
+    image: mysql:5.7
+    container_name: wpsql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Pass@123
+      MYSQL_DATABASE: wordpressdb
+    volumes:
+      - /home/ec2-user/wordpressbackup:/var/lib/mysql
+
+  wordpress:
+    image: wordpress:latest
+    container_name: wordpress
+    restart: always
+    ports:
+      - "80:80"
+    environment:
+      WORDPRESS_DB_HOST: wpsql:3306
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: Pass@123
+      WORDPRESS_DB_NAME: wordpressdb
+    depends_on:
+      - db
+
