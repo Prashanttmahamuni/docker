@@ -20,4 +20,14 @@ docker logs <container>                     # View container logs
 docker inspect <container>                  # View detailed container info
 docker image prune                          # Remove unused images
 docker commit <container> <new_image>:<tag> # Create image from container
+```
+🌐 Port Mapping
+Port mapping connects a container’s internal port to a host port.
+
+```bash
+docker run -d -p80:80 nginx
+```
+This maps container port 80 to host port 80, making it accessible via localhost:80.
+
+
 
