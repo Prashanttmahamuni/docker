@@ -6,7 +6,7 @@ This guide covers essential Docker commands, WordPress setup, image handling, Do
                                                   
 ## 📦 Basic Docker Commands  
             
-```bash
+```bash              
 docker pull <image>                         # Pull image from Docker Hub
 docker images                               # List all local images
 docker run -d -p80:80 <image>               # Run container in background on port 80
