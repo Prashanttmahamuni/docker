@@ -5,7 +5,7 @@ This guide covers essential Docker commands, WordPress setup, image handling, Do
 ---                                                                                                                       
                                                                 
 ## 📦 Basic Docker Commands                      
-            
+                                    
 ```bash              
 docker pull <image>                         # Pull image from Docker Hub
 docker images                               # List all local images
