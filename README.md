@@ -2,8 +2,8 @@
                 
 This guide covers essential Docker commands, WordPress setup, image handling, Docker Hub workflows, and AWS ECR integration.
           
----                                                                                                                               
-                                                                                                        
+--- 
+
 ## 📦 Basic Docker Commands                                                            
                                                                   
 ```bash                                      
